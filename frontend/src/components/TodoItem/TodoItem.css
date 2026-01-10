@@ -1,0 +1,112 @@
+.todo-item {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(220, 20%, 92%);
+  border-radius: 12px;
+  padding: 16px 20px;
+  transition: all 200ms ease;
+  position: relative;
+}
+
+.todo-item:hover {
+  border-color: hsl(220, 20%, 85%);
+  box-shadow: 0 4px 12px -2px rgb(0 0 0 / 0.08);
+}
+
+.todo-item-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.todo-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.todo-item-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(220, 20%, 15%);
+  line-height: 1.4;
+  margin-bottom: 6px;
+  word-break: break-word;
+}
+
+.todo-item-description {
+  font-size: 0.875rem;
+  color: hsl(220, 10%, 50%);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.todo-item-actions {
+  display: flex;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity 150ms ease;
+  flex-shrink: 0;
+}
+
+.todo-item:hover .todo-item-actions {
+  opacity: 1;
+}
+
+.todo-item-action-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: hsl(220, 10%, 50%);
+  font-size: 0.875rem;
+  transition: all 150ms ease;
+}
+
+.todo-item-action-btn:hover {
+  background-color: hsl(220, 20%, 95%);
+}
+
+.todo-item-action-btn.edit:hover {
+  color: hsl(220, 90%, 50%);
+  background-color: hsl(220, 90%, 95%);
+}
+
+.todo-item-action-btn.delete:hover {
+  color: hsl(0, 84%, 50%);
+  background-color: hsl(0, 84%, 95%);
+}
+
+.todo-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: hsl(220, 10%, 55%);
+}
+
+.todo-empty-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background-color: hsl(220, 20%, 95%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.todo-empty-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(220, 20%, 25%);
+  margin-bottom: 8px;
+}
+
+.todo-empty-text {
+  font-size: 0.9375rem;
+  color: hsl(220, 10%, 55%);
+}

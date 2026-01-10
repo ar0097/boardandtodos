@@ -1,0 +1,145 @@
+.board-detail {
+  min-height: 100vh;
+  background-color: hsl(220, 20%, 97%);
+}
+
+.board-detail-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.board-detail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(220, 10%, 50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  margin-bottom: 24px;
+  transition: color 150ms ease;
+}
+
+.board-detail-back:hover {
+  color: hsl(220, 90%, 50%);
+}
+
+.board-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.board-detail-info {
+  flex: 1;
+}
+
+.board-detail-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: hsl(220, 20%, 15%);
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.board-detail-meta {
+  font-size: 0.875rem;
+  color: hsl(220, 10%, 50%);
+}
+
+.board-detail-add-btn {
+  padding: 12px 20px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, hsl(220, 90%, 56%), hsl(260, 90%, 56%));
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.board-detail-add-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -5px hsl(220, 90%, 50%, 0.4);
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todos-count {
+  font-size: 0.875rem;
+  color: hsl(220, 10%, 50%);
+  margin-bottom: 16px;
+}
+
+.board-detail-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  color: hsl(220, 10%, 50%);
+}
+
+.board-detail-loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid hsl(220, 20%, 90%);
+  border-top-color: hsl(220, 90%, 56%);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 16px;
+}
+
+.board-detail-error {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.board-detail-error-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.board-detail-error-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(220, 20%, 20%);
+  margin-bottom: 8px;
+}
+
+.board-detail-error-text {
+  font-size: 0.9375rem;
+  color: hsl(220, 10%, 50%);
+  margin-bottom: 24px;
+}
+
+.board-detail-error-btn {
+  padding: 12px 24px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: hsl(220, 90%, 50%);
+  background: transparent;
+  border: 1px solid hsl(220, 90%, 80%);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.board-detail-error-btn:hover {
+  background-color: hsl(220, 90%, 97%);
+}
