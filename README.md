@@ -4,6 +4,7 @@ A full-stack MERN-style application that allows users to create boards and manag
 Includes authentication, board management, and todo CRUD operations.
 
 🚀 Live URLs
+
 Frontend
 
 👉 https://boardandtodos-fhnt.vercel.app/
@@ -13,10 +14,15 @@ Backend
 👉 https://boardandtodos.vercel.app/
 
 📦 GitHub Repository
+
 git clone https://github.com/ar0097/boardandtodos.git
+
 ⚙️ Backend Setup
+
 cd backend
+
 npm install
+
 node index.js
 
 Backend will run on:
@@ -24,8 +30,11 @@ Backend will run on:
 http://localhost:5000
 
 🎨 Frontend Setup
+
 cd frontend
+
 npm install
+
 npm start
 
 Frontend will run on:
@@ -33,6 +42,7 @@ Frontend will run on:
 http://localhost:3000
 
 🛠️ Tech Stack
+
 Frontend
 
 React
@@ -61,29 +71,47 @@ Vercel Deployment
 Create a .env file inside backend/:
 
 PORT=5000
+
 MONGO_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_secret_key
 
 
 ⚠️ Do not push .env to GitHub
 
 📌 API Endpoints
+
 🔑 Authentication
-Method	Endpoint	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Login user
+
+Method	and Endpoint	
+
+POST	/api/auth/register	
+
+POST	/api/auth/login	
+
 📋 Boards
-Method	Endpoint	Description
-GET	/api/boards	Get all boards
-POST	/api/boards	Create a new board
-PUT	/api/boards/:boardId	Update a board
-DELETE	/api/boards/:boardId	Delete a board
+Method and	Endpoint	
+
+GET	/api/boards	
+
+POST	/api/boards	
+
+PUT	/api/boards/:boardId	
+
+DELETE	/api/boards/:boardId	
+
 ✅ Todos
-Method	Endpoint	Description
-GET	/api/todos/:boardId	Get todos of a board
-POST	/api/todos	Create a todo
-PUT	/api/todos/:todoId	Update a todo
-DELETE	/api/todos/:todoId	Delete a todo
+
+Method and	Endpoint	
+
+GET	/api/todos/:boardId	
+
+POST	/api/todos	
+
+PUT	/api/todos/:todoId
+
+DELETE	/api/todos/:todoId
+
 🧠 Example Flow (Boards & Todos)
 
 User registers & logs in
@@ -111,8 +139,11 @@ Use JWT token in headers:
 Authorization: Bearer <your_token>
 
 🧾 Scripts
+
 Backend
+
 node index.js
 
 Frontend
+
 npm start
