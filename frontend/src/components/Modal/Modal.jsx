@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./Modal.css";
 import { FiX } from "react-icons/fi";
 

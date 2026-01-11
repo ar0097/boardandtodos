@@ -4,6 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import Header from "../../components/Header/Header";
 import TodoItem, { TodoEmpty } from "../../components/TodoItem/TodoItem";
 import Modal from "../../components/Modal/Modal";
+import { IoIosArrowRoundBack } from "react-icons/io";
 import {
   getBoards,
   getTodos,
@@ -196,7 +197,8 @@ const BoardDetail = () => {
       <Header />
       <div className="board-detail-content">
         <button className="board-detail-back" onClick={() => navigate("/")}>
-          ← Back to boards
+          <IoIosArrowRoundBack size={20} />
+          Back to boards
         </button>
 
         <div className="board-detail-header">

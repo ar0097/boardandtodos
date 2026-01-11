@@ -1,5 +1,5 @@
 import "./BoardCard.css";
-import { FiGrid, FiEdit, FiTrash2, FiPlus } from "react-icons/fi";
+import { FiGrid, FiEdit, FiTrash2 } from "react-icons/fi";
 
 const BoardCard = ({ board, onClick, onEdit, onDelete }) => {
   console.log("example", board);
